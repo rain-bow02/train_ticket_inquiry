@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #000;
+}
+.timeTable{
+    margin-left: 40px;
+}
+.page{
+    width: 1440px;
+    height: 710px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+.main{
+    width: 640px;
+    height: 688px;
+    margin:  auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+    background-color:#f6f6f6 ;
+}
+
+.main .headertitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main>header{
+    height: 80px;
+}
+
+/*页面头部*/
+
+.header h2{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #a1a1a1;
+}
+
+/*头部按钮*/
+.headerbutton{
+    margin-left: 450px;
+    margin-bottom: 10px;
+}
+
+.add{
+    width: 75px;
+    height: 30px;
+    color: white;
+    background-color: #5cba61;
+    border: 1px solid black;
+    margin-left: -4px;
+    margin-right: 9px;
+}
+
+.delete{
+    color: white;
+    background-color: #da4f4f;
+    width: 75px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+/*主体*/
+.table{
+    margin-left: 10px;
+    width: 600px;
+    height: 300px;
+    margin-top: 2px;
+}
+
+/*页脚*/
+.footer{
+    text-align: right;
+    height: 60px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.footer span{
+    position: absolute;
+    left: 30px;
+    top: 240px;
+    transform: translateY(-50%);
+}
+
+#prevPage{
+    position: absolute;
+    left: 450px;
+    top: 227px;
+}
+
+#nextPage{
+    position: absolute;
+    left: 530px;
+    top: 227px;
+}
+
+/*弹窗页面*/
+.inputbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.check{
+    text-align:left;
+    width: 450px;
+    height: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    box-shadow: #ccc;
+    overflow: hidden;
+    position: absolute;
+    border: 1px solid black;
+    display: none;
+}
+
+.check>.headtitle{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+    background: black;
+    font-weight: bold;
+}
+
+.check>ul{
+    margin-top: 30px; 
+    list-style: none;
+    margin-left: 100px;
+}
+
+.check>ul>li{
+    color: #000;
+    height: 40px;
+}
+
+.check>ul>li>label{
+    margin-right: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 50px;
+}
+.check>ul>li>input{
+    display: inline-block;
+}
+.checkinfo{
+    width: 150px;
+    border: none;
+    border:1px solid black ;
+}
+
+.line{
+    width: 500px;
+    height: 1px;
+    background-color: #efebe9;
+}
+
+.checkbutton{
+    text-align: right;
+}
+
+.checkbutton button{
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.checkbutton button:nth-child(1){
+    background: green;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cityInform{
+    margin-top: 2px;
+    margin-left: 400px;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f0ea;
+}
+
+#cityInformAdd{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    color: white;
+    top: 55px;
+    left:792px;
+    border: 1px solid black;
+    background-color: #5cba61;
+}
+
+#cityInformDel{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    color: white;
+    top: 55px;
+    left: 883px;
+    border: 1px solid black;
+    background-color: #da4f4f;
+}
+
+
+
+.cityInformHeader h2{
+    position:absolute;
+    top: 20px;
+    left: 695px;
+    color: #a1a1a1;
+}
+
+/*主体*/
+.cityTable{
+    position: absolute;
+    top: 90px;
+    left: 695px;
+    width: 268px;
+    margin-top: 2px;
+}
+
+/*页脚*/
+.cityFooter{
+    text-align: right;
+    height: 60px;
+    position: absolute;
+    top: 626px;
+    left: 707px;
+    padding-bottom: 20px;
+}
+
+.cityFooter>span{
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    transform: translateY(-50%);
+}
+
+#cityPrevPage{
+    position: absolute;
+    left: 792px;
+    top: 620px;
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #5cba61;
+    color: white;
+}
+
+#cityNextPage{
+    position: absolute;
+    left: 883px;
+    top:620px;
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #da4f4f;
+    color:white
+}
+
+
+.addCity{
+    width: 300px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    box-shadow: #ccc;
+    overflow: hidden;
+    position: absolute;
+    border: 1px solid black;
+    display: none;
+}
+
+.addCity>.heatitle{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    color: white;
+    background: black;
+    font-weight: bold;
+}
+
+.cityInput{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+#cityInput{
+    border: 1px solid black;
+}
+.addSubmit{
+    width: 60px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #5cba61;
+    color: white;
+    border: #000 1px solid;
+}
+
+.addCancel{
+    width: 60px;
+    height: 30px;
+    margin-left: 120px;
+    margin-top: 20px;
+    background-color: #da4f4f;
+    color: white;
+    border: #000 1px solid;
+}
+
+#search{
+    position: absolute;
+    float: left;
+    padding-left: 0px;
+    top: 20px;
+    left: 1050px;
+    width: 450px;
+    text-align: left;
+}
+#search h2{
+    color: #a1a1a1;
+}
+#searchInput1{
+    width: 100px;
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 0px;
+    font-size: 15px;
+    margin-right: 27px;
+    margin-left: 24px;
+}
+
+#searchInput2{
+    width: 100px;
+    height:40px;
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+#searchBtn{
+    background-color: #5cba61;
+    color: white;
+    border: #000 1px solid;
+    width: 332px;
+    height: 44px;
+    margin-left: 2px;
+    font-size: 15px;
+}
+
+#searchSelect{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-right: 40px;
+}
+
+#result{
+    position: absolute;
+    top: 256px;
+    height: 350px;
+    overflow: auto;
+    left: 1050px;
+    width: 330px;
+    border: #000 1px solid;
+    padding-top: 30px;
+    background-color:#f3f0ea ;
+}
+#research{
+    color: #a1a1a1;
+    position: absolute;
+    top: 220px;
+    left: 1050px;
+}
+#result span{
+    margin-left: 20px;
+    font-size: 15px;
+    color: black;
+}

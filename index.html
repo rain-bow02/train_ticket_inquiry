@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>全国交通咨询模拟</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div class="page">
+    <div class="main">
+
+        <div class="header">
+            <div class="headertitle">
+                <h2>列车时刻表</h2>
+            </div>
+            <div class="headerbutton">
+                <button class="add" onclick="add()">新增</button>
+                <button class="delete" onclick="remove()">删除</button>
+            </div>
+        </div>
+
+        <div class="table">
+            <table id="form" cellspacing="0"></table>
+        </div>
+
+        <div class="footer">
+            <span class="foot"></span>
+            <input type="button" class="add" onclick="prevPage()" id="prevPage" value="上一页">
+            <input type="button" class="delete" onclick="nextPage()" id="nextPage" value="下一页">
+        </div>
+
+    </div>
+<div>
+    <div class="cityInformHeader">
+        <h2>城市信息</h2>
+    </div>
+    <button id="cityInformAdd" onclick="cityInformAdd()">添加</button>
+    <button id="cityInformDel" onclick="cityInformDel()">删除</button>
+    <div class="cityTable">
+        <table id="cityForm" cellspacing="0"></table>
+    </div>
+
+    <div class="cityFooter">
+        <span class="cityFoot"></span>
+    </div>
+
+    <input type="button" id="cityPrevPage" onclick="cityPrevPage()" value="上一页">
+    <input type="button" id="cityNextPage" onclick="cityNextPage()" value="下一页">
+</div>
+   <div class="addCity">
+        <div class="heatitle">添加城市</div>
+
+        <div class="cityInput">
+            <label>城市名：  </label>
+            <input type="text" id="cityInput"/></div>
+
+        <button class="addSubmit" onclick="citySubmit()">确定</button>
+        <button class="addCancel" onclick="cityCancel()">取消</button>
+
+    </div>
+
+    <div class="inputbox"></div>
+
+    <div class="check">
+        <div class="headtitle">新增列车</div>
+
+        <ul>
+            <li><label>列车号</label><input type="text" class="checkinfo"></li>
+            <li><label>出发地</label><input type="text" class="checkinfo"></li>
+            <li><label>目的地</label><input type="text" class="checkinfo"></li>
+            <li><label>出发时间</label><input type="text" class="checkinfo"></li>
+            <li><label>抵达时间</label><input type="text" class="checkinfo"></li>
+            <li><label>票价</label><input type="text" class="checkinfo"></li>
+        </ul>
+
+        <div class="line"></div>
+
+        <div class="checkbutton">
+            <button class="checksubmit"></button>
+            <button class="checkcancel" onclick="cancel()">取消</button>
+        </div>
+
+    </div>
+
+
+    <div id="search">
+<h2>车票查询</h2><br>
+
+        <a>车站选择</a> <input type="text" id="searchInput1" placeholder="请输入起始站"/>
+        <input type="text" id="searchInput2" placeholder="请输入终点站"/>
+       <br><br>
+        最优决策原则
+        <select id="searchSelect">
+            <option value="1">耗时最短</option>
+            <option value="2">最省钱</option>
+            <option value="3">中转最少</option>
+        </select>
+        <br>
+        <br>
+        <button id="searchBtn" onclick="search()">查询车票</button>
+        </table>
+    </div>
+
+    <h2 id="research">查询结果</h2>
+    <div id="result">
+
+    </div>
+</div>
+</body>
+</html>
